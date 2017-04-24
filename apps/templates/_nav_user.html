@@ -1,0 +1,21 @@
+{% load i18n %}
+<li id="assets">
+    <a href="{% url 'assets:user-asset-list' %}">
+        <i class="fa fa-files-o"></i><span class="nav-label">{% trans 'My assets' %}</span><span class="label label-info pull-right"></span>
+    </a>
+</li>
+<li id="users">
+    <a href="{% url 'users:user-profile' %}">
+        <i class="fa fa-user" ></i> <span class="nav-label">{% trans 'Profile' %}</span><span class="label label-info pull-right"></span>
+    </a>
+</li>
+<li id="applications">
+    <a href="{% url 'applications:terminal-list' %}">
+        <i class="fa fa-terminal" ></i> <span class="nav-label">{% trans 'Terminal' %}</span><span class="label label-info pull-right"></span>
+    </a>
+</li>
+<li class="special_link">
+    <a href="http://www.jumpserver.org" target="_blank"><i class="fa fa-database"></i>
+        <span class="nav-label">访问官网</span>
+    </a>
+</li>

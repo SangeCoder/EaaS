@@ -1,0 +1,1028 @@
+2017-04-22 11:37:03 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-22 11:37:03 [exception ERROR] Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
+    s = six.text_type(s)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/html.py", line 382, in <lambda>
+    klass.__unicode__ = lambda self: mark_safe(klass_unicode(self))
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/fields.py", line 113, in render
+    self.fetch_captcha_store(name, value, attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/fields.py", line 40, in fetch_captcha_store
+    key = CaptchaStore.generate_key()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/models.py", line 61, in generate_key
+    store = cls.objects.create(challenge=challenge, response=response)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/models.py", line 49, in save
+    super(CaptchaStore, self).save(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1043, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: captcha_captchastore
+2017-04-22 11:37:03 [basehttp ERROR] "GET /users/login?next=/ HTTP/1.1" 500 211687
+2017-04-22 11:37:04 [base WARNING] Not Found: /favicon.ico
+2017-04-22 11:37:04 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3505
+2017-04-22 11:37:43 [exception ERROR] Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
+    s = six.text_type(s)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/html.py", line 382, in <lambda>
+    klass.__unicode__ = lambda self: mark_safe(klass_unicode(self))
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/fields.py", line 113, in render
+    self.fetch_captcha_store(name, value, attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/fields.py", line 40, in fetch_captcha_store
+    key = CaptchaStore.generate_key()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/models.py", line 61, in generate_key
+    store = cls.objects.create(challenge=challenge, response=response)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/models.py", line 49, in save
+    super(CaptchaStore, self).save(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1043, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: captcha_captchastore
+2017-04-22 11:37:43 [basehttp ERROR] "GET /users/login?next=/ HTTP/1.1" 500 211823
+2017-04-22 11:37:45 [exception ERROR] Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
+    s = six.text_type(s)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/html.py", line 382, in <lambda>
+    klass.__unicode__ = lambda self: mark_safe(klass_unicode(self))
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/fields.py", line 113, in render
+    self.fetch_captcha_store(name, value, attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/fields.py", line 40, in fetch_captcha_store
+    key = CaptchaStore.generate_key()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/models.py", line 61, in generate_key
+    store = cls.objects.create(challenge=challenge, response=response)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/captcha/models.py", line 49, in save
+    super(CaptchaStore, self).save(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1043, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: captcha_captchastore
+2017-04-22 11:37:45 [basehttp ERROR] "GET /users/login?next=/ HTTP/1.1" 500 211822
+2017-04-22 11:39:23 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-22 11:39:23 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-22 11:39:24 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-22 11:39:24 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-22 11:39:24 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-22 11:39:24 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-22 11:39:24 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-22 11:39:24 [basehttp INFO] "GET /captcha/image/1c12fdd8849d4089dcbde8ef28615c9631b0f4d6/ HTTP/1.1" 200 3669
+2017-04-22 11:39:24 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:39:41 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:39:41 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:39:46 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:39:46 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:40:14 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:40:14 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:40:17 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:40:17 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:40:32 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:40:32 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:40:34 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:40:34 [basehttp INFO] "GET /captcha/image/f9e6e9afc46163ede6d9df3c8ac93c85c6869247/ HTTP/1.1" 200 3378
+2017-04-22 11:40:34 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:40:36 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:40:36 [basehttp INFO] "GET /captcha/image/038d84c97512c56753b8bcc79f17828a65f469cf/ HTTP/1.1" 200 4570
+2017-04-22 11:40:36 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:40:46 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:40:46 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:43:23 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:43:23 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:43:23 [base WARNING] Not Found: /favicon.ico
+2017-04-22 11:43:23 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3505
+2017-04-22 11:43:25 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:43:25 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:43:26 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:43:26 [basehttp INFO] "GET /captcha/image/6119f10de37bce1ae007bf248834dd57a782cef0/ HTTP/1.1" 200 4162
+2017-04-22 11:43:27 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:43:27 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:43:27 [basehttp INFO] "GET /captcha/image/c47288ad71176f76a1b24817d07f4f9e2dbfa02b/ HTTP/1.1" 200 4221
+2017-04-22 11:43:27 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:43:34 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:43:34 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:43:37 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:43:37 [basehttp INFO] "GET /captcha/image/7b3eb3e6e63fa6c9dba2eb1c04759240c2bcfc17/ HTTP/1.1" 200 4076
+2017-04-22 11:43:58 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-22 11:43:59 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-22 11:43:59 [basehttp INFO] "GET /captcha/image/1c77628ae1295941ac7ad311fc150a0fe2a8faf4/ HTTP/1.1" 200 3988
+2017-04-22 11:44:00 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:44:09 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:44:09 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:44:09 [base WARNING] Not Found: /favicon.ico
+2017-04-22 11:44:09 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3505
+2017-04-22 11:44:35 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:44:35 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:46:51 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:46:51 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:46:53 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:46:53 [basehttp INFO] "GET /captcha/image/af3958a97c3970f0d70e68d3588b89222cce33bd/ HTTP/1.1" 200 4207
+2017-04-22 11:46:53 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:46:54 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:46:54 [basehttp INFO] "GET /captcha/image/614d925d2b274e87702984a991c4b5870b850e73/ HTTP/1.1" 200 4188
+2017-04-22 11:46:54 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:47:05 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:47:05 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:47:11 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:47:11 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:47:12 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:47:12 [basehttp INFO] "GET /captcha/image/83578c5d7f8a223ca4f0e5b5a116453ef2add684/ HTTP/1.1" 200 4186
+2017-04-22 11:47:12 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:47:39 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:47:39 [basehttp INFO] "GET /captcha/image/c97a8e3b6d768023218d8dda4eeec2a9aa4d57e9/ HTTP/1.1" 200 3927
+2017-04-22 11:47:39 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:47:40 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:47:40 [basehttp INFO] "GET /captcha/image/5d8d5ee11ed03baac8549f23b57ad404ee835933/ HTTP/1.1" 200 4220
+2017-04-22 11:47:40 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:47:49 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:47:49 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:48:59 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:48:59 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:49:01 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4527
+2017-04-22 11:49:01 [basehttp INFO] "GET /captcha/image/38078fe599761f7a3b7b449deea94fe39aabd4fa/ HTTP/1.1" 200 4396
+2017-04-22 11:49:01 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:49:01 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4527
+2017-04-22 11:49:01 [basehttp INFO] "GET /captcha/image/8cdc9b234a7ccab1fbf5ebe6b0b79b32f78e7555/ HTTP/1.1" 200 3983
+2017-04-22 11:49:02 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:49:11 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:49:11 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:50:30 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 11:50:30 [basehttp INFO] "GET /captcha/image/4177efed9c192714cc23f36bcc9311bf34dde375/ HTTP/1.1" 200 3712
+2017-04-22 11:50:30 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 11:50:40 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:50:40 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 11:51:05 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 11:51:05 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:02:01 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:02:01 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:02:33 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:02:33 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:02:57 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:02:57 [basehttp INFO] "GET /captcha/image/caf301dd5e75cf75851e695df2a1e8e7c6dc5ddb/ HTTP/1.1" 200 4085
+2017-04-22 12:02:57 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1731
+2017-04-22 12:02:57 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:02:59 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:02:59 [basehttp INFO] "GET /captcha/image/27483d4149076dac96a30892397f9603339c5ffb/ HTTP/1.1" 200 4372
+2017-04-22 12:02:59 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1731
+2017-04-22 12:17:47 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 3843
+2017-04-22 12:17:47 [basehttp INFO] "GET /captcha/image/79605e9531c969670392e0577c923e4f4e42c33f/ HTTP/1.1" 200 4413
+2017-04-22 12:17:48 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:17:58 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 3831
+2017-04-22 12:17:58 [basehttp INFO] "GET /captcha/image/5c7f184255a6a080226693c872f37ec5e00eb0a9/ HTTP/1.1" 200 4155
+2017-04-22 12:17:58 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:18:01 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 3831
+2017-04-22 12:18:01 [basehttp INFO] "GET /captcha/image/68e72604645648716172a3a514d7d04b4c93ca05/ HTTP/1.1" 200 3910
+2017-04-22 12:18:01 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:18:25 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 3837
+2017-04-22 12:18:26 [basehttp INFO] "GET /captcha/image/d0015b2baf045696389457c8aa29f1e3bad2f4d0/ HTTP/1.1" 200 3991
+2017-04-22 12:18:26 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:18:39 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:18:39 [basehttp INFO] "GET /captcha/image/582c839013c4f50d9bebabfd857401740a380363/ HTTP/1.1" 200 3667
+2017-04-22 12:18:39 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:19:26 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:19:26 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:22:45 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-22 12:22:45 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-22 12:22:46 [basehttp INFO] "GET /captcha/image/ee86e9b48c35abd8f04134acfaf57eca5d610255/ HTTP/1.1" 200 4209
+2017-04-22 12:22:46 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:22:57 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:22:57 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:22:57 [base WARNING] Not Found: /favicon.ico
+2017-04-22 12:22:57 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-22 12:23:51 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:23:51 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:24:32 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:24:32 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:26:42 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:26:42 [basehttp INFO] "GET /captcha/image/fa831f4a072652d6c699cb0ee9b0746ebce32937/ HTTP/1.1" 200 4058
+2017-04-22 12:26:43 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:28:41 [basehttp INFO] "GET /captcha/refresh/ HTTP/1.1" 200 124
+2017-04-22 12:28:41 [basehttp INFO] "GET /captcha/image/0595501cc6e65e8bf42936e4d55172b1bf00ef85/ HTTP/1.1" 200 3872
+2017-04-22 12:28:43 [basehttp INFO] "GET /captcha/refresh/ HTTP/1.1" 200 124
+2017-04-22 12:28:43 [basehttp INFO] "GET /captcha/image/96c39770923d16d85507b21791ba68aaaa7ad31b/ HTTP/1.1" 200 3915
+2017-04-22 12:28:46 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:28:46 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:29:57 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:29:57 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:30:01 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:30:01 [basehttp INFO] "GET /captcha/image/f59f04bcb7a4e97475ff3c8406aa6118400bee84/ HTTP/1.1" 200 4195
+2017-04-22 12:30:01 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:30:02 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:30:02 [basehttp INFO] "GET /captcha/image/30ccb5d53090d3d1897933e94f52fa84e3d975ed/ HTTP/1.1" 200 4191
+2017-04-22 12:30:02 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:30:05 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-22 12:30:05 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-22 12:30:05 [basehttp INFO] "GET /captcha/image/0c81e56b2236fbb8f351d4ce640bda5992373805/ HTTP/1.1" 200 4353
+2017-04-22 12:30:06 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:30:23 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:30:23 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:30:23 [base WARNING] Not Found: /favicon.ico
+2017-04-22 12:30:23 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-22 12:30:31 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:30:31 [basehttp INFO] "GET /captcha/image/8950def4d4569fbd2507f4afaa33826cf246ff77/ HTTP/1.1" 200 4229
+2017-04-22 12:40:43 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:40:43 [basehttp INFO] "GET /captcha/image/4f8d636322b3a5991d36c7c976d9479d3f8d71f7/ HTTP/1.1" 200 4100
+2017-04-22 12:40:43 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:40:49 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:40:49 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:40:56 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-22 12:40:56 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-22 12:40:58 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:40:58 [basehttp INFO] "GET /captcha/image/8938e12edb2323d59ac09019a7c8f9442fc18be0/ HTTP/1.1" 200 3874
+2017-04-22 12:40:58 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-22 12:41:03 [basehttp INFO] "GET /users/password/forgot HTTP/1.1" 200 2795
+2017-04-22 12:41:11 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-22 12:41:12 [basehttp INFO] "GET /captcha/image/79b0090c61c3f7689c6bf3dfae98d6b454d0c0d8/ HTTP/1.1" 200 4243
+2017-04-24 09:50:18 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 304 0
+2017-04-24 09:50:18 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 304 0
+2017-04-24 09:50:19 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 304 0
+2017-04-24 09:50:19 [basehttp INFO] "GET /captcha/image/03c63bffad11ecebc7a73c5082f15988283d37b8/ HTTP/1.1" 200 4315
+2017-04-24 09:51:30 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 09:51:30 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 09:51:30 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 09:51:30 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 09:51:30 [basehttp INFO] "GET /captcha/image/5a702b8e491c9d1c4ecebebfee3b7baa163df44b/ HTTP/1.1" 200 4353
+2017-04-24 09:51:30 [basehttp INFO] "GET /captcha/image/ee6d51d7a1cd45b1454daa1fc0ed95f5e98e135d/ HTTP/1.1" 200 4158
+2017-04-24 09:51:41 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 09:51:41 [basehttp INFO] "GET /captcha/image/8d0c2b0119d871a01e8e1391571269af3108998e/ HTTP/1.1" 200 4257
+2017-04-24 09:51:41 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 09:58:19 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 09:58:20 [basehttp INFO] "GET /captcha/image/fc5cd635ca57d5f40679b5bb473dbc3a16338df1/ HTTP/1.1" 200 4279
+2017-04-24 09:58:20 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 10:09:59 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 10:09:59 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:10:00 [basehttp INFO] "GET /captcha/image/57fe0b973c8955cea4380c3836abd6af5b17b404/ HTTP/1.1" 200 4100
+2017-04-24 10:15:29 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 10:15:29 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-24 10:15:29 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-24 10:15:30 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-24 10:15:30 [basehttp INFO] "GET /captcha/image/df274d271bffa869cebd70fcb604942e69743506/ HTTP/1.1" 200 4446
+2017-04-24 10:15:30 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 10:15:32 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:15:32 [basehttp INFO] "GET /captcha/image/8fcad7334d9f9de796e92dbdf6052468f065da74/ HTTP/1.1" 200 4252
+2017-04-24 10:15:32 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 10:35:13 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:35:13 [basehttp INFO] "GET /captcha/image/167687289e5824c54d0a70cd3e20f6109bcec4c5/ HTTP/1.1" 200 4376
+2017-04-24 10:35:13 [base WARNING] Not Found: /static/img/facio.ico
+2017-04-24 10:35:13 [basehttp WARNING] "GET /static/img/facio.ico HTTP/1.1" 404 94
+2017-04-24 10:35:14 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:35:15 [basehttp INFO] "GET /captcha/image/aef6ba70aa14f182e01e7c06cfe9bed58eb8b50c/ HTTP/1.1" 200 4105
+2017-04-24 10:35:16 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:35:16 [basehttp INFO] "GET /captcha/image/1b87105cba269ecd316fbd3b4b740ecdaffa9d75/ HTTP/1.1" 200 4239
+2017-04-24 10:35:25 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:35:25 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 1374
+2017-04-24 10:35:25 [base WARNING] Not Found: /favicon.ico
+2017-04-24 10:35:25 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 85
+2017-04-24 10:35:57 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:35:57 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 1374
+2017-04-24 10:36:20 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:36:20 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 1374
+2017-04-24 10:36:22 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:36:34 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 10:36:34 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:36:34 [basehttp INFO] "GET /captcha/image/331f078cc764c0bcec9555b657d5dfd36d14fef0/ HTTP/1.1" 200 4161
+2017-04-24 10:36:44 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:36:44 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 1374
+2017-04-24 10:36:49 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:36:49 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 1374
+2017-04-24 10:37:02 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 10:37:02 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:37:02 [basehttp INFO] "GET /captcha/image/f07b85cb6061b1914fc0ff7875460ffc05443566/ HTTP/1.1" 200 3776
+2017-04-24 10:37:11 [basehttp INFO] "GET /captcha/refresh/ HTTP/1.1" 200 124
+2017-04-24 10:37:11 [basehttp INFO] "GET /captcha/image/936d447723d3c1a9be48df15d299efbce1bb8ffd/ HTTP/1.1" 200 3857
+2017-04-24 10:37:15 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:37:15 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 1374
+2017-04-24 10:37:46 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:37:46 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 10:39:15 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:39:15 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 10:39:37 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:39:38 [basehttp INFO] "GET /captcha/image/97ee2e25252b84602ec84c64b4d897e962b90500/ HTTP/1.1" 200 4168
+2017-04-24 10:39:39 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:39:39 [basehttp INFO] "GET /captcha/image/b0c0896bf553eeba3da338913e7a061f031a1057/ HTTP/1.1" 200 4242
+2017-04-24 10:40:11 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:40:12 [basehttp INFO] "GET /captcha/image/349be02222d567d64f653b3bbdbb4d21b31bbae3/ HTTP/1.1" 200 3999
+2017-04-24 10:40:23 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:40:23 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 10:40:29 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:40:29 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 10:44:11 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:44:11 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 10:44:15 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:44:15 [basehttp INFO] "GET /captcha/image/890191ae2e26f9c5d71de839e879cb92269a7ae9/ HTTP/1.1" 200 4075
+2017-04-24 10:44:16 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:44:16 [basehttp INFO] "GET /captcha/image/3320cfdbf78f0014e06615f28610c837c19ee511/ HTTP/1.1" 200 4096
+2017-04-24 10:44:30 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 10:44:30 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 10:46:39 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 10:46:39 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 10:46:39 [basehttp INFO] "GET /captcha/image/efd0a5c16fdcde1fb37d7b9426d95c1c6bfb397d/ HTTP/1.1" 200 4233
+2017-04-24 11:01:27 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-24 11:01:27 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:01:27 [basehttp INFO] "GET /captcha/image/208c496f556e7ce26e0b6c0c14784b07446681dc/ HTTP/1.1" 200 4231
+2017-04-24 11:01:38 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:01:38 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:04:44 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:04:44 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:04:58 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:04:59 [basehttp INFO] "GET /captcha/image/cc88c475e21c80b5f7f55a626c2b6627ee5e1279/ HTTP/1.1" 200 4264
+2017-04-24 11:05:02 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:05:02 [basehttp INFO] "GET /captcha/image/2cfb195ff52e59cd9fb1d369a26ab4e9be09b4f8/ HTTP/1.1" 200 4227
+2017-04-24 11:07:12 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:07:12 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:07:14 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:07:14 [basehttp INFO] "GET /captcha/image/78dce57edd7d064ae4cb391ea7fbccc73b09a646/ HTTP/1.1" 200 4372
+2017-04-24 11:07:15 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:07:15 [basehttp INFO] "GET /captcha/image/0abcbded8bfd059e9e9bddd232b2b6f3e6c18e4d/ HTTP/1.1" 200 4346
+2017-04-24 11:07:24 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:07:24 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:07:29 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:07:29 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:10:15 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:10:15 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:10:17 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:10:17 [basehttp INFO] "GET /captcha/image/7afc03cbdd23e01682c2a686211a54965b5cd43d/ HTTP/1.1" 200 4107
+2017-04-24 11:10:18 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:10:18 [basehttp INFO] "GET /captcha/image/00123f63d9384f0e38eac2124c4e85aabea50cca/ HTTP/1.1" 200 4202
+2017-04-24 11:10:31 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:10:31 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:11:06 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:11:06 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:11:55 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 11:11:55 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 11:13:24 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:13:24 [basehttp INFO] "GET /captcha/image/2423c009eb4e3b5ea6ecf65a1d695b4d978c34b1/ HTTP/1.1" 200 4251
+2017-04-24 11:13:24 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 11:13:26 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:13:26 [basehttp INFO] - Broken pipe from ('127.0.0.1', 51954)
+
+2017-04-24 11:13:27 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:13:27 [basehttp INFO] "GET /captcha/image/46f5b61600f9c9174a7406e09796a354085ba7f5/ HTTP/1.1" 200 4581
+2017-04-24 11:13:28 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 11:13:29 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:13:29 [basehttp INFO] "GET /captcha/image/f480da52d23c781bd6971ddbc973c25debc69fc6/ HTTP/1.1" 200 4065
+2017-04-24 11:13:29 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 11:13:38 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 11:13:39 [basehttp INFO] "GET /captcha/image/01fa41dfcaa679443ce02fb65e53d69bd0e6d16a/ HTTP/1.1" 200 4460
+2017-04-24 11:13:39 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:01:06 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-24 13:01:06 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-24 13:01:07 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-24 13:01:07 [basehttp INFO] "GET /captcha/image/3f70741035fc93ef023a3dc20a69a7330e695201/ HTTP/1.1" 200 3920
+2017-04-24 13:01:07 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 13:01:17 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:01:17 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:01:17 [base WARNING] Not Found: /favicon.ico
+2017-04-24 13:01:17 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 13:04:15 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:04:15 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:04:16 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:04:17 [basehttp INFO] "GET /captcha/image/c336f309e44db3e384bfbd1ab804e0d1b2a2fb25/ HTTP/1.1" 200 4051
+2017-04-24 13:04:17 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 13:04:18 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:04:18 [basehttp INFO] "GET /captcha/image/ecf6d118d63f9b133e5f51c7cdfe1028b90f1688/ HTTP/1.1" 200 4165
+2017-04-24 13:04:18 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 13:04:27 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:04:27 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:04:32 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:04:32 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:05:22 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:05:22 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:05:39 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:05:39 [basehttp INFO] "GET /captcha/image/a23e432c1c592ab71ea42915a5770cc3c97e2c1b/ HTTP/1.1" 200 4468
+2017-04-24 13:05:39 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:05:39 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 13:05:41 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:05:41 [basehttp INFO] "GET /captcha/image/7cdffaad9e19b8164fcc0513e1f7aec644bd6f65/ HTTP/1.1" 200 3781
+2017-04-24 13:05:41 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:06:17 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:06:17 [basehttp INFO] "GET /captcha/image/d956758e20a23d3fe78a33c18f96556997dbe83e/ HTTP/1.1" 200 4263
+2017-04-24 13:06:17 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:07:21 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-24 13:07:22 [basehttp INFO] "GET /captcha/image/5473532d071bd2b17ef8f916d77dc2d17ec87af5/ HTTP/1.1" 200 4393
+2017-04-24 13:07:22 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:07:22 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 13:07:41 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:07:41 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:13:49 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:13:49 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:13:51 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:13:51 [basehttp INFO] "GET /captcha/image/d72ad2e990cc5a07b6af1084b4277a7a1831edec/ HTTP/1.1" 200 4287
+2017-04-24 13:13:51 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:13:52 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:13:52 [basehttp INFO] "GET /captcha/image/bf37f0325ae0b2b54afc2f64c0eb33f67a057f7e/ HTTP/1.1" 200 3450
+2017-04-24 13:13:52 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:14:05 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:14:05 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 13:15:51 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:15:51 [basehttp INFO] "GET /captcha/image/075f4ae7cf20579b791d288d7b5f57593817e91e/ HTTP/1.1" 200 4411
+2017-04-24 13:15:51 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:15:54 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 13:15:54 [basehttp INFO] "GET /captcha/image/a357239e065e0ccfa22eac6a9fff5e7a748e5769/ HTTP/1.1" 200 4172
+2017-04-24 13:15:54 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 13:16:04 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 13:16:04 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 14:01:02 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 14:01:02 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 14:01:05 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 14:01:05 [basehttp INFO] "GET /captcha/image/1a9c5d92c11cc99e512d8582fb724ab891ab695f/ HTTP/1.1" 200 4684
+2017-04-24 14:01:05 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 14:01:07 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 14:01:07 [basehttp INFO] "GET /captcha/image/6893f31a7a593eb5a2b94702614f6f75b6280394/ HTTP/1.1" 200 3686
+2017-04-24 14:01:07 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 14:10:02 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 14:10:02 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:13:54 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:13:54 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:14:00 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:14:00 [basehttp INFO] "GET /captcha/image/c848410158737813a0b22b026f86c28a150f933c/ HTTP/1.1" 200 4077
+2017-04-24 15:14:00 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 15:14:02 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:14:02 [basehttp INFO] "GET /captcha/image/4ba85eaf564fb9341ce5bfbe432b2e46cae16949/ HTTP/1.1" 200 4313
+2017-04-24 15:14:02 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 15:16:12 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:16:12 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:19:53 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-24 15:19:53 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-24 15:19:54 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-24 15:19:55 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-24 15:19:56 [basehttp INFO] "GET /captcha/image/4400e3a0ac164328e7111276eee7178d70dc6a28/ HTTP/1.1" 200 4129
+2017-04-24 15:19:57 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 15:20:04 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:20:04 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:20:04 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:20:04 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 15:21:53 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:21:54 [basehttp INFO] "GET /captcha/image/eaa6a6e180f5bfb0027388b72920a9b25a5713a8/ HTTP/1.1" 200 4283
+2017-04-24 15:21:56 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:21:56 [basehttp INFO] "GET /captcha/image/ab76afd51fd4e95b39d8864e14ff17dce179e48c/ HTTP/1.1" 200 3912
+2017-04-24 15:21:56 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 15:22:52 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:22:52 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:24:53 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:24:53 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:25:00 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:25:00 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:25:21 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:25:21 [basehttp INFO] "GET /captcha/image/1a9239e651a3fd2aab14da659424ef7ef4d76925/ HTTP/1.1" 200 4108
+2017-04-24 15:25:31 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:25:31 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:25:31 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:25:31 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 15:28:54 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:28:54 [basehttp INFO] "GET /captcha/image/2359d2f0db48848a01fa67c9c0d572bd60e3bc6b/ HTTP/1.1" 200 4430
+2017-04-24 15:29:02 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:29:02 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:31:50 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:31:50 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:31:56 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:31:56 [basehttp INFO] "GET /captcha/image/58f6f48acc46d607c135b4484d8bb45eb3e7a09c/ HTTP/1.1" 200 4325
+2017-04-24 15:32:03 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:32:03 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:32:03 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:32:03 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 15:32:13 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:32:13 [basehttp INFO] "GET /captcha/image/8f3996e7a6906a73dcdfcc54d2e090688e60e693/ HTTP/1.1" 200 3889
+2017-04-24 15:32:20 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:32:20 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:32:20 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:32:20 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 15:35:10 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:35:10 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:35:14 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:35:14 [basehttp INFO] "GET /captcha/image/15feb994d9c7775277423457d351f5757bfbe0a2/ HTTP/1.1" 200 3891
+2017-04-24 15:35:20 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:35:20 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:35:20 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:35:20 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 15:37:03 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:37:03 [basehttp INFO] "GET /captcha/image/c33845f2f10ff014ec70093687249c730d09777a/ HTTP/1.1" 200 4321
+2017-04-24 15:37:07 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+2017-04-24 15:37:07 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 304 0
+2017-04-24 15:37:08 [basehttp INFO] "GET /captcha/image/b34e0c5ad5b9c936c6fb7d9563a8d84342f08835/ HTTP/1.1" 200 3933
+2017-04-24 15:37:13 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:37:13 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:37:13 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:37:13 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 15:38:46 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:38:46 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2826
+2017-04-24 15:40:36 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:40:36 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:40:40 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:40:40 [basehttp INFO] "GET /captcha/image/0b06779dc5b719032fc212bf0162a4d37165e49c/ HTTP/1.1" 200 4202
+2017-04-24 15:40:40 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 15:40:41 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:40:41 [basehttp INFO] "GET /captcha/image/5371fac1d39c505b55d411c185edbe631b987274/ HTTP/1.1" 200 4252
+2017-04-24 15:40:41 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 15:40:45 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-24 15:40:45 [basehttp INFO] "GET /captcha/image/ec3e762b052942412d24bdf2a45e4d1a8f9a89da/ HTTP/1.1" 200 3925
+2017-04-24 15:40:45 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 15:40:58 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 15:40:58 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 15:40:58 [base WARNING] Not Found: /favicon.ico
+2017-04-24 15:40:58 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 18:22:23 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 18:22:23 [basehttp INFO] "GET /captcha/image/fc8e1b8cf5430a1961b901eae0de1f30f222d59e/ HTTP/1.1" 200 4320
+2017-04-24 18:22:23 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 304 0
+2017-04-24 18:22:37 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 18:22:37 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 18:22:55 [csrf WARNING] Forbidden (CSRF cookie not set.): /users/login
+2017-04-24 18:22:55 [basehttp WARNING] "POST /users/login?next=/ HTTP/1.1" 403 2857
+2017-04-24 18:22:58 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 18:22:59 [basehttp INFO] "GET /captcha/image/1fa7ec82ff24c0e118d5e0a64f73295c2e628710/ HTTP/1.1" 200 4351
+2017-04-24 18:22:59 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 18:22:59 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4674
+2017-04-24 18:22:59 [basehttp INFO] "GET /captcha/image/af55ccdf8fa6a882cd8a3e88c02cacdca3c1fe04/ HTTP/1.1" 200 4227
+2017-04-24 18:22:59 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 18:23:08 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 302 0
+2017-04-24 18:23:08 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/js/plugins/metisMenu/jquery.metisMenu.js HTTP/1.1" 200 3984
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/js/plugins/toastr/toastr.min.js HTTP/1.1" 200 5216
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/js/inspinia.js HTTP/1.1" 200 4636
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/js/plugins/echarts/echarts.js HTTP/1.1" 200 363230
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/css/patterns/header-profile.png HTTP/1.1" 200 5877
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 71508
+2017-04-24 18:23:08 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/js/plugins/echarts/chart/line.js HTTP/1.1" 200 12928
+2017-04-24 18:23:08 [basehttp INFO] "GET /static/js/plugins/echarts/chart/pie.js HTTP/1.1" 200 12159
+2017-04-24 18:25:46 [exception ERROR] Internal Server Error: /users/profile/pubkey/update/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'bootstrap3' is not a registered tag library. Must be one of:
+cache
+common_tags
+i18n
+l10n
+rest_framework
+static
+staticfiles
+tz
+2017-04-24 18:25:46 [basehttp ERROR] "GET /users/profile/pubkey/update/ HTTP/1.1" 500 130771
+2017-04-24 18:25:57 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 302 0
+2017-04-24 18:27:47 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21252
+2017-04-24 18:27:47 [basehttp INFO] "GET /static/css/plugins/select2/select2.min.css HTTP/1.1" 200 15196
+2017-04-24 18:27:47 [basehttp INFO] "GET /static/js/plugins/select2/select2.full.min.js HTTP/1.1" 200 75005
+2017-04-24 18:27:47 [basehttp INFO] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 15248
+2017-04-24 18:27:47 [basehttp INFO] "GET /static/js/plugins/dataTables/dataTables.min.js HTTP/1.1" 200 1287120
+2017-04-24 18:27:47 [basehttp INFO] "GET /static/js/plugins/dataTables/i18n/zh-hans.json HTTP/1.1" 200 715
+2017-04-24 18:27:47 [basehttp INFO] "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23424
+2017-04-24 18:27:47 [basehttp INFO] "GET /api/users/v1/users/?_=1493029667177 HTTP/1.1" 200 537
+2017-04-24 18:27:49 [exception ERROR] Internal Server Error: /users/user/create
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'bootstrap3' is not a registered tag library. Must be one of:
+cache
+common_tags
+i18n
+l10n
+rest_framework
+static
+staticfiles
+tz
+2017-04-24 18:27:49 [basehttp ERROR] "GET /users/user/create HTTP/1.1" 500 119957
+2017-04-24 18:28:10 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21252
+2017-04-24 18:28:10 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-24 18:28:10 [basehttp INFO] "GET /api/users/v1/users/?_=1493029690286 HTTP/1.1" 200 537
+2017-04-24 18:28:33 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21252
+2017-04-24 18:28:34 [basehttp INFO] "GET /api/users/v1/users/?_=1493029713915 HTTP/1.1" 200 537
+2017-04-24 18:28:34 [basehttp INFO] "GET /users/user-group HTTP/1.1" 200 15027
+2017-04-24 18:28:35 [basehttp INFO] "GET /api/users/v1/user-groups/?_=1493029714907 HTTP/1.1" 200 180
+2017-04-24 18:29:18 [basehttp INFO] "GET /users/user-group HTTP/1.1" 200 15027
+2017-04-24 18:29:18 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 18:29:18 [basehttp INFO] "GET /api/users/v1/user-groups/?_=1493029758118 HTTP/1.1" 200 180
+2017-04-24 18:29:20 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12343
+2017-04-24 18:29:20 [basehttp INFO] "GET /static/css/plugins/cropper/cropper.min.css HTTP/1.1" 200 3329
+2017-04-24 18:29:20 [basehttp INFO] "GET /static/js/plugins/cropper/cropper.min.js HTTP/1.1" 200 17154
+2017-04-24 18:29:25 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12343
+2017-04-24 18:29:26 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 11923
+2017-04-24 18:29:27 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 12720
+2017-04-24 18:29:29 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:29:33 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21252
+2017-04-24 18:29:34 [basehttp INFO] "GET /api/users/v1/users/?_=1493029773684 HTTP/1.1" 200 537
+2017-04-24 18:29:34 [basehttp INFO] "GET /users/user/create HTTP/1.1" 200 14115
+2017-04-24 18:29:34 [basehttp INFO] "GET /static/js/plugins/datepicker/bootstrap-datepicker.js HTTP/1.1" 200 46821
+2017-04-24 18:30:07 [basehttp INFO] "POST /users/user/create HTTP/1.1" 302 0
+2017-04-24 18:30:07 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21421
+2017-04-24 18:30:08 [basehttp INFO] "GET /api/users/v1/users/?_=1493029807987 HTTP/1.1" 200 976
+2017-04-24 18:30:12 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:30:14 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:30:14 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 18:32:20 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:32:20 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 18:33:42 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:33:42 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 18:37:43 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:37:43 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 18:41:09 [basehttp INFO] "GET /audits/proxy-log-online/ HTTP/1.1" 200 15200
+2017-04-24 18:41:09 [basehttp INFO] "GET /static/css/plugins/datepicker/datepicker3.css HTTP/1.1" 200 33679
+2017-04-24 18:41:12 [basehttp INFO] "GET /audits/proxy-log-offline/ HTTP/1.1" 200 14726
+2017-04-24 18:41:14 [basehttp INFO] "GET /audits/command-log/ HTTP/1.1" 200 13527
+2017-04-24 18:41:14 [basehttp INFO] "GET /static/css/plugins/footable/footable.core.css HTTP/1.1" 200 5460
+2017-04-24 18:41:14 [basehttp INFO] "GET /static/js/plugins/footable/footable.all.min.js HTTP/1.1" 200 37082
+2017-04-24 18:41:14 [basehttp INFO] "GET /static/css/plugins/footable/fonts/footable.woff HTTP/1.1" 200 4016
+2017-04-24 18:41:16 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 14107
+2017-04-24 18:41:21 [basehttp INFO] "GET /ops/task/ HTTP/1.1" 200 13341
+2017-04-24 18:41:24 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 18717
+2017-04-24 18:41:25 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493030484820 HTTP/1.1" 200 2
+2017-04-24 18:41:30 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 12772
+2017-04-24 18:41:32 [basehttp INFO] "GET /perms/asset-permission/create HTTP/1.1" 200 14673
+2017-04-24 18:41:39 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21009
+2017-04-24 18:41:39 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493030499336 HTTP/1.1" 200 2
+2017-04-24 18:41:41 [basehttp INFO] "GET /assets/asset-group/ HTTP/1.1" 200 19098
+2017-04-24 18:41:41 [basehttp INFO] "GET /api/assets/v1/asset-groups/?_=1493030501239 HTTP/1.1" 200 89
+2017-04-24 18:41:42 [basehttp INFO] "GET /assets/idc/ HTTP/1.1" 200 14611
+2017-04-24 18:41:42 [basehttp INFO] "GET /api/assets/v1/idc/?_=1493030502592 HTTP/1.1" 200 242
+2017-04-24 18:41:44 [basehttp INFO] "GET /assets/admin-user/ HTTP/1.1" 200 13002
+2017-04-24 18:41:44 [basehttp INFO] "GET /api/assets/v1/admin-user/?_=1493030504259 HTTP/1.1" 200 2
+2017-04-24 18:41:46 [basehttp INFO] "GET /assets/system-user/ HTTP/1.1" 200 15394
+2017-04-24 18:41:46 [basehttp INFO] "GET /api/assets/v1/system-user/?_=1493030506234 HTTP/1.1" 200 2
+2017-04-24 18:41:48 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21252
+2017-04-24 18:41:48 [basehttp INFO] "GET /api/users/v1/users/?_=1493030508367 HTTP/1.1" 200 976
+2017-04-24 18:43:06 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:46:22 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 18:46:38 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12343
+2017-04-24 18:46:40 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 12720
+2017-04-24 18:46:49 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 12720
+2017-04-24 18:46:50 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 11923
+2017-04-24 18:47:02 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12343
+2017-04-24 19:06:34 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 18717
+2017-04-24 19:06:35 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493031994743 HTTP/1.1" 200 2
+2017-04-24 19:20:00 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 18717
+2017-04-24 19:20:00 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 19:20:00 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493032800092 HTTP/1.1" 200 2
+2017-04-24 19:20:01 [basehttp INFO] "GET /users/logout HTTP/1.1" 200 2859
+2017-04-24 19:20:01 [base WARNING] Not Found: /favicon.ico
+2017-04-24 19:20:01 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-24 19:20:07 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4429
+2017-04-24 19:20:07 [basehttp INFO] "GET /captcha/image/f0843cad2a7a48cb07142065ce04e8eb450a22d4/ HTTP/1.1" 200 4285
+2017-04-24 19:20:12 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4429
+2017-04-24 19:20:12 [basehttp INFO] "GET /captcha/image/3c7ceac2c4fbcdba3bdc2598112266f228b6c05c/ HTTP/1.1" 200 3850
+2017-04-24 19:20:12 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 19:20:23 [basehttp INFO] "GET /captcha/refresh/ HTTP/1.1" 200 124
+2017-04-24 19:20:23 [basehttp INFO] "GET /captcha/image/b91e31a9f1d5934d1fdb70481ea0b47c4f077a13/ HTTP/1.1" 200 4202
+2017-04-24 19:20:28 [basehttp INFO] "POST /users/login HTTP/1.1" 302 0
+2017-04-24 19:20:28 [basehttp INFO] "GET / HTTP/1.1" 200 23580
+2017-04-24 19:23:29 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 19:25:01 [basehttp INFO] "GET / HTTP/1.1" 200 23347
+2017-04-24 19:25:01 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 19:27:14 [basehttp INFO] "GET / HTTP/1.1" 200 23347
+2017-04-24 19:27:15 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 19:27:19 [basehttp INFO] "GET / HTTP/1.1" 200 23347
+2017-04-24 19:27:19 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-24 19:28:00 [basehttp INFO] "GET / HTTP/1.1" 200 23347
+2017-04-24 19:28:04 [basehttp INFO] "GET / HTTP/1.1" 200 23347
+2017-04-24 19:28:04 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 19:28:10 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21019
+2017-04-24 19:28:10 [basehttp INFO] "GET /api/users/v1/users/?_=1493033290313 HTTP/1.1" 200 976
+2017-04-24 19:28:14 [basehttp INFO] "GET /users/user-group HTTP/1.1" 200 14794
+2017-04-24 19:28:15 [basehttp INFO] "GET /api/users/v1/user-groups/?_=1493033294886 HTTP/1.1" 200 180
+2017-04-24 20:05:34 [basehttp INFO] "GET /users/user-group HTTP/1.1" 200 14790
+2017-04-24 20:05:34 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-24 20:05:34 [basehttp INFO] "GET /api/users/v1/user-groups/?_=1493035534330 HTTP/1.1" 200 180
