@@ -54,8 +54,8 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-2 border-bottom white-bg dashboard-header" style="margin-left:15px;height: 346px">
+    <div class="row ">
+        <div class="col-sm-2  white-bg dashboard-header" style="margin-left:15px;height: 346px">
             <h2>活跃用户TOP5</h2>
             <small>过去一周共有<span class="text-info">{{ user_visit_count_weekly }}</span>位用户登录<span class="text-success">{{ asset_visit_count_weekly }}</span>次服务器.</small>
             <ul class="list-group clear-list m-t">
@@ -69,8 +69,8 @@
                 {% endfor %}
             </ul>
         </div>
-        <div class="col-sm-7" id="top10" style="margin-left: -15px;height: 346px;padding: 15px 0 15px 0;"></div>
-        <div class="col-sm-3 white-bg" id="top1" style="margin-left: -15px;height: 346px">
+        <div class="col-sm-6" id="top10" style="margin-left:35px;height: 346px;"></div>
+        <div class="col-sm-3 white-bg" id="top1" style="margin-left: 35px;height: 346px">
             <div class="statistic-box">
                 <h4>
                     活跃用户资产占比
@@ -164,7 +164,7 @@
                                 {% for login in last_login_ten %}
                                     <div class="feed-element">
                                         <a href="#" class="pull-left">
-                                            <img alt="image" class="img-circle" src="/static/img/root.png">
+                                            <img alt="image" class="img-circle" src="{% static 'img/root.png' %}">
                                         </a>
                                         <div class="media-body ">
                                             {% ifequal login.is_finished 0 %}
