@@ -62,7 +62,7 @@ class Config:
     # Use Redis as broker for celery and web socket
     REDIS_HOST = '127.0.0.1'
     REDIS_PORT = 6379
-    REDIS_PASSWORD = ''
+    REDIS_PASSWORD = '123456'
     BROKER_URL = 'redis://%(password)s%(host)s:%(port)s/3' % {
         'password': REDIS_PASSWORD,
         'host': REDIS_HOST,
@@ -119,7 +119,7 @@ class ProductionConfig(Config):
     DB_HOST = '127.0.0.1'
     DB_PORT = 3306
     DB_USER = 'root'
-    DB_PASSWORD = ''
+    DB_PASSWORD = '123456'
     DB_NAME = 'jumpserver'
 
 
