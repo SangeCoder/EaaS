@@ -1,13 +1,11 @@
 # ~*~ coding: utf-8 ~*~
 
 from __future__ import unicode_literals
-from django import forms
-from django.shortcuts import render
+from django.shortcuts import render, reverse, redirect
 from django.contrib.auth import login as auth_login, logout as auth_logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
-from django.shortcuts import reverse, redirect
 from django.utils.decorators import method_decorator
 from django.utils.translation import ugettext as _
 from django.views.decorators.cache import never_cache

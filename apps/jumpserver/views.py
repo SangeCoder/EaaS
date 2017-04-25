@@ -5,7 +5,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import redirect
 
 
-from users.utils import AdminUserRequiredMixin
 from users.models import User
 from assets.models import Asset
 from audits.models import ProxyLog
