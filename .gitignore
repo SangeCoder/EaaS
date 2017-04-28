@@ -1,0 +1,9 @@
+.gitignore
+.idea/EaaS.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/preferred-vcs.xml
+.idea/workspace.xml
+logs
+tmp/*
