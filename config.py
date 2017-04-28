@@ -78,15 +78,15 @@ class Config:
     # SESSION_COOKIE_AGE = 3600*24
 
     # Email SMTP setting, we only support smtp send mail
-    # EMAIL_HOST = 'smtp.qq.com'
+    # EMAIL_HOST = 'smtp.exmail.qq.com'
     # EMAIL_PORT = 25
-    # EMAIL_HOST_USER = ''
-    # EMAIL_HOST_PASSWORD = ''
+    # EMAIL_HOST_USER = 'issues@huizhaofang.com '
+    # EMAIL_HOST_PASSWORD = 'Issues@huizhaofang2026'
     # EMAIL_USE_SSL = False  # If port is 465, set True
     # EMAIL_USE_TLS = False  # If port is 587, set True
     # EMAIL_SUBJECT_PREFIX = '[Jumpserver] '
-
-    CAPTCHA_TEST_MODE = False
+    #
+    # CAPTCHA_TEST_MODE = False
 
     # You can set jumpserver usage url here, that when user submit wizard redirect to
     USER_GUIDE_URL = ''

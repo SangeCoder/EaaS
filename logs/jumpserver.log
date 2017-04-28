@@ -4205,3 +4205,1030 @@ TemplateDoesNotExist: assets/_asset_bulk_update_modal.html
 2017-04-25 17:33:04 [basehttp INFO] "GET /users/logout HTTP/1.1" 200 2859
 2017-04-25 17:33:06 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4425
 2017-04-25 17:33:06 [basehttp INFO] "GET /captcha/image/4e7629f09945e39029c6303fe29d2f50884aeb47/ HTTP/1.1" 200 4381
+2017-04-25 18:34:13 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-25 18:34:19 [basehttp INFO] "GET /users/user-group HTTP/1.1" 200 15345
+2017-04-25 18:34:20 [basehttp INFO] "GET /api/users/v1/user-groups/?_=1493116459766 HTTP/1.1" 200 21338
+2017-04-25 18:34:23 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21327
+2017-04-25 18:34:24 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493116463755 HTTP/1.1" 200 2643
+2017-04-25 18:34:25 [basehttp INFO] "GET /assets/asset-group/ HTTP/1.1" 200 20492
+2017-04-25 18:34:26 [basehttp INFO] "GET /api/assets/v1/asset-groups/?_=1493116465937 HTTP/1.1" 200 11154
+2017-04-25 18:34:29 [basehttp INFO] "GET /assets/asset-group/create/ HTTP/1.1" 200 13817
+2017-04-25 18:34:29 [basehttp INFO] "GET /assets/asset-modal?group_id= HTTP/1.1" 200 5625
+2017-04-25 18:34:32 [basehttp INFO] "GET /assets/idc/ HTTP/1.1" 200 14929
+2017-04-25 18:34:33 [basehttp INFO] "GET /api/assets/v1/idc/?_=1493116473023 HTTP/1.1" 200 1916
+2017-04-25 18:34:34 [basehttp INFO] "GET /assets/idc/create/ HTTP/1.1" 200 13359
+2017-04-25 18:34:37 [basehttp INFO] "GET /assets/admin-user/ HTTP/1.1" 200 13320
+2017-04-25 18:34:37 [basehttp INFO] "GET /api/assets/v1/admin-user/?_=1493116477584 HTTP/1.1" 200 3998
+2017-04-25 18:34:38 [basehttp INFO] "GET /assets/admin-user/create/ HTTP/1.1" 200 12702
+2017-04-25 18:34:46 [basehttp INFO] "GET /assets/system-user/ HTTP/1.1" 200 15712
+2017-04-25 18:34:46 [basehttp INFO] "GET /api/assets/v1/system-user/?_=1493116486278 HTTP/1.1" 200 2720
+2017-04-25 18:34:51 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-25 18:34:52 [basehttp INFO] "GET /perms/asset-permission/create HTTP/1.1" 200 27530
+2017-04-25 18:34:58 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 19035
+2017-04-25 18:34:58 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493116498360 HTTP/1.1" 200 2
+2017-04-25 18:35:05 [basehttp INFO] "GET /ops/task/ HTTP/1.1" 200 13659
+2017-04-25 18:35:10 [basehttp INFO] "GET /audits/proxy-log-online/ HTTP/1.1" 200 15518
+2017-04-25 18:35:12 [basehttp INFO] "GET /audits/proxy-log-offline/ HTTP/1.1" 200 15044
+2017-04-25 18:35:14 [basehttp INFO] "GET /audits/command-log/ HTTP/1.1" 200 22823
+2017-04-25 18:35:16 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 28379
+2017-04-25 18:35:23 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-25 18:35:28 [basehttp INFO] "GET /perms/asset-permission/create HTTP/1.1" 200 27530
+2017-04-25 18:35:31 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 28379
+2017-04-25 18:35:37 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 28379
+2017-04-25 18:35:50 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 10:03:07 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4425
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 304 0
+2017-04-26 10:03:07 [basehttp INFO] "GET /captcha/image/ca49d4a41ad313864f81021b677d1f80e7f53e1e/ HTTP/1.1" 200 4204
+2017-04-26 10:03:07 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 302 0
+2017-04-26 10:03:13 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/js/plugins/metisMenu/jquery.metisMenu.js HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/js/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/js/inspinia.js HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/js/plugins/echarts/echarts.js HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/css/patterns/header-profile.png HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/js/plugins/echarts/chart/line.js HTTP/1.1" 304 0
+2017-04-26 10:03:13 [basehttp INFO] "GET /static/js/plugins/echarts/chart/pie.js HTTP/1.1" 304 0
+2017-04-26 10:16:45 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-26 10:16:45 [basehttp INFO] "GET /static/css/plugins/select2/select2.min.css HTTP/1.1" 304 0
+2017-04-26 10:16:45 [basehttp INFO] "GET /static/js/plugins/dataTables/dataTables.min.js HTTP/1.1" 304 0
+2017-04-26 10:16:45 [basehttp INFO] "GET /static/js/plugins/select2/select2.full.min.js HTTP/1.1" 304 0
+2017-04-26 10:16:45 [basehttp INFO] "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+2017-04-26 10:16:47 [basehttp INFO] "GET /perms/asset-permission/create HTTP/1.1" 200 27530
+2017-04-26 10:16:47 [basehttp INFO] "GET /static/css/plugins/datepicker/datepicker3.css HTTP/1.1" 304 0
+2017-04-26 10:16:47 [basehttp INFO] "GET /static/js/plugins/datepicker/bootstrap-datepicker.js HTTP/1.1" 304 0
+2017-04-26 10:17:10 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 19035
+2017-04-26 10:17:10 [basehttp INFO] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 0
+2017-04-26 10:17:10 [basehttp INFO] "GET /static/js/plugins/dataTables/i18n/zh-hans.json HTTP/1.1" 304 0
+2017-04-26 10:17:10 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493173030358 HTTP/1.1" 200 2
+2017-04-26 10:17:22 [basehttp INFO] "GET /ops/task/ HTTP/1.1" 200 13659
+2017-04-26 10:17:30 [basehttp INFO] "GET /audits/proxy-log-online/ HTTP/1.1" 200 15518
+2017-04-26 10:17:35 [basehttp INFO] "GET /audits/command-log/ HTTP/1.1" 200 22823
+2017-04-26 10:17:35 [basehttp INFO] "GET /static/css/plugins/footable/footable.core.css HTTP/1.1" 304 0
+2017-04-26 10:17:35 [basehttp INFO] "GET /static/js/plugins/footable/footable.all.min.js HTTP/1.1" 304 0
+2017-04-26 10:17:35 [basehttp INFO] "GET /static/css/plugins/footable/fonts/footable.woff HTTP/1.1" 304 0
+2017-04-26 10:17:36 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 29138
+2017-04-26 10:17:52 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 29138
+2017-04-26 10:23:46 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-26 10:23:52 [basehttp INFO] "GET /audits/command-log/ HTTP/1.1" 200 22823
+2017-04-26 10:23:55 [basehttp INFO] "GET /audits/login-log/ HTTP/1.1" 200 29138
+2017-04-26 10:24:14 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 10:24:15 [basehttp INFO] "GET /api/users/v1/users/?_=1493173454392 HTTP/1.1" 200 51916
+2017-04-26 10:24:23 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12661
+2017-04-26 10:24:23 [basehttp INFO] "GET /static/css/plugins/cropper/cropper.min.css HTTP/1.1" 304 0
+2017-04-26 10:24:23 [basehttp INFO] "GET /static/js/plugins/cropper/cropper.min.js HTTP/1.1" 304 0
+2017-04-26 10:24:24 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 12241
+2017-04-26 10:24:30 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 13038
+2017-04-26 10:24:33 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 10:24:34 [basehttp INFO] "GET /api/users/v1/users/?_=1493173473386 HTTP/1.1" 200 51916
+2017-04-26 10:24:36 [basehttp INFO] "GET /users/user/24 HTTP/1.1" 200 44855
+2017-04-26 10:24:40 [basehttp INFO] "GET /users/user/24/asset-permission HTTP/1.1" 200 23779
+2017-04-26 10:24:40 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=24&_=1493173480673 HTTP/1.1" 200 2
+2017-04-26 10:24:41 [basehttp INFO] "GET /users/user/24/assets HTTP/1.1" 200 16171
+2017-04-26 10:24:41 [basehttp INFO] "GET /api/perms/v1/user/24/assets/?_=1493173481482 HTTP/1.1" 200 2
+2017-04-26 10:24:41 [basehttp INFO] "GET /api/perms/v1/user/24/asset-groups/?_=1493173481483 HTTP/1.1" 200 2
+2017-04-26 10:24:54 [basehttp INFO] "GET /users/user/24/asset-permission HTTP/1.1" 200 23779
+2017-04-26 10:24:54 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=24&_=1493173494265 HTTP/1.1" 200 2
+2017-04-26 10:25:24 [basehttp INFO] "GET /users/user/24 HTTP/1.1" 200 44855
+2017-04-26 10:25:27 [basehttp INFO] "GET /users/user/24/assets HTTP/1.1" 200 16171
+2017-04-26 10:25:28 [basehttp INFO] "GET /api/perms/v1/user/24/assets/?_=1493173527803 HTTP/1.1" 200 2
+2017-04-26 10:25:28 [basehttp INFO] "GET /api/perms/v1/user/24/asset-groups/?_=1493173527804 HTTP/1.1" 200 2
+2017-04-26 10:25:30 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21327
+2017-04-26 10:25:30 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493173530427 HTTP/1.1" 200 2643
+2017-04-26 10:25:50 [basehttp INFO] "GET /assets/asset/4/ HTTP/1.1" 200 47891
+2017-04-26 10:25:59 [basehttp INFO] "PATCH /api/assets/v1/assets/4/ HTTP/1.1" 200 651
+2017-04-26 10:26:05 [basehttp INFO] "PATCH /api/assets/v1/assets/4/ HTTP/1.1" 200 650
+2017-04-26 10:26:11 [basehttp INFO] "GET /assets/asset/4/ HTTP/1.1" 200 47891
+2017-04-26 14:50:58 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 14:50:59 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-26 14:51:01 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 14:51:02 [basehttp INFO] "GET /api/users/v1/users/?_=1493189461386 HTTP/1.1" 200 51916
+2017-04-26 14:51:04 [basehttp INFO] "GET /users/user/create HTTP/1.1" 200 18595
+2017-04-26 14:52:23 [basehttp INFO] "POST /users/user/create HTTP/1.1" 302 0
+2017-04-26 14:52:23 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21740
+2017-04-26 14:52:24 [basehttp INFO] "GET /api/users/v1/users/?_=1493189543701 HTTP/1.1" 200 52388
+2017-04-26 14:52:57 [basehttp INFO] "GET /users/user/103 HTTP/1.1" 200 44489
+2017-04-26 14:53:17 [basehttp INFO] "GET /users/user/103/asset-permission HTTP/1.1" 200 23779
+2017-04-26 14:53:17 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=103&_=1493189597515 HTTP/1.1" 200 2
+2017-04-26 14:53:21 [basehttp INFO] "GET /users/user/103/assets HTTP/1.1" 200 16167
+2017-04-26 14:53:21 [basehttp INFO] "GET /api/perms/v1/user/103/assets/?_=1493189601296 HTTP/1.1" 200 2
+2017-04-26 14:53:21 [basehttp INFO] "GET /api/perms/v1/user/103/asset-groups/?_=1493189601297 HTTP/1.1" 200 2
+2017-04-26 14:53:22 [basehttp INFO] "GET /users/user/103/asset-permission HTTP/1.1" 200 23779
+2017-04-26 14:53:23 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=103&_=1493189603048 HTTP/1.1" 200 2
+2017-04-26 14:53:23 [basehttp INFO] "GET /users/user/103 HTTP/1.1" 200 44489
+2017-04-26 14:53:26 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21327
+2017-04-26 14:53:26 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493189606645 HTTP/1.1" 200 2643
+2017-04-26 14:53:33 [basehttp INFO] "GET /assets/asset/3/ HTTP/1.1" 200 49919
+2017-04-26 14:53:46 [basehttp INFO] "GET /assets/asset-group/ HTTP/1.1" 200 20492
+2017-04-26 14:53:47 [basehttp INFO] "GET /api/assets/v1/asset-groups/?_=1493189626492 HTTP/1.1" 200 11154
+2017-04-26 14:53:52 [basehttp INFO] "GET /assets/idc/ HTTP/1.1" 200 14929
+2017-04-26 14:53:53 [basehttp INFO] "GET /api/assets/v1/idc/?_=1493189632973 HTTP/1.1" 200 1916
+2017-04-26 14:53:57 [basehttp INFO] "GET /assets/idc/6/ HTTP/1.1" 200 15101
+2017-04-26 14:54:06 [basehttp INFO] "GET /assets/idc/6/assets/ HTTP/1.1" 200 21607
+2017-04-26 14:54:07 [basehttp INFO] "GET /api/assets/v1/assets/?idc_id=6&_=1493189646817 HTTP/1.1" 200 1330
+2017-04-26 14:54:13 [basehttp INFO] "GET /assets/asset/2/ HTTP/1.1" 200 49918
+2017-04-26 14:54:27 [basehttp INFO] "GET /assets/admin-user/ HTTP/1.1" 200 13320
+2017-04-26 14:54:27 [basehttp INFO] "GET /api/assets/v1/admin-user/?_=1493189667230 HTTP/1.1" 200 3998
+2017-04-26 14:54:29 [basehttp INFO] "GET /assets/system-user/ HTTP/1.1" 200 15712
+2017-04-26 14:54:29 [basehttp INFO] "GET /api/assets/v1/system-user/?_=1493189669076 HTTP/1.1" 200 2720
+2017-04-26 14:54:33 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-26 14:54:36 [basehttp INFO] "GET /perms/asset-permission/create HTTP/1.1" 200 27566
+2017-04-26 14:55:00 [utils INFO] Push system user Andrea Wells
+2017-04-26 14:55:00 [utils INFO] 	Asset: 0.0.0.0
+2017-04-26 14:55:00 [utils INFO] 	Asset: 1.1.1.1
+2017-04-26 14:55:00 [basehttp INFO] "POST /perms/asset-permission/create HTTP/1.1" 302 0
+2017-04-26 14:55:01 [utils DEBUG] Start runner Push user Andrea Wells
+2017-04-26 14:55:01 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 14229
+2017-04-26 14:55:01 [runner WARNING] 'Process' object has no attribute '_authkey'
+2017-04-26 14:55:11 [basehttp INFO] "GET /perms/asset-permission/1/update HTTP/1.1" 200 27679
+2017-04-26 14:55:15 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 14034
+2017-04-26 14:55:18 [basehttp INFO] "GET /perms/asset-permission/1 HTTP/1.1" 200 23637
+2017-04-26 14:55:23 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 19035
+2017-04-26 14:55:23 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493189723490 HTTP/1.1" 200 2
+2017-04-26 14:55:26 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 19035
+2017-04-26 14:55:26 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493189726455 HTTP/1.1" 200 2
+2017-04-26 14:55:29 [basehttp INFO] "GET /ops/task/ HTTP/1.1" 200 14634
+2017-04-26 14:55:34 [basehttp INFO] "GET /ops/task/f6924f36-5fa2-40a2-8a7c-7d696fb09fa2/ HTTP/1.1" 200 17427
+2017-04-26 14:55:47 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 19035
+2017-04-26 14:55:48 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493189747723 HTTP/1.1" 200 2
+2017-04-26 14:55:54 [basehttp INFO] "GET /audits/proxy-log-online/ HTTP/1.1" 200 15518
+2017-04-26 14:55:57 [basehttp INFO] "GET /audits/proxy-log-offline/ HTTP/1.1" 200 15044
+2017-04-26 14:56:04 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-26 14:56:04 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4425
+2017-04-26 14:56:05 [basehttp INFO] "GET /captcha/image/138f131dfcee6e953cdabab08b71aa9d56e3b001/ HTTP/1.1" 200 4135
+2017-04-26 14:56:13 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 200 4581
+2017-04-26 14:56:13 [basehttp INFO] "GET /captcha/image/a3982088bcefc522d95c911b950e2f323a4ab318/ HTTP/1.1" 200 4062
+2017-04-26 14:56:29 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 302 0
+2017-04-26 14:56:29 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-26 14:56:29 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17680
+2017-04-26 14:56:29 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-26 14:56:29 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493189789221 HTTP/1.1" 200 2
+2017-04-26 14:56:33 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15872
+2017-04-26 14:57:31 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16412
+2017-04-26 14:57:31 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493189851328 HTTP/1.1" 200 2
+2017-04-26 14:57:46 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16412
+2017-04-26 14:57:46 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493189866508 HTTP/1.1" 200 2
+2017-04-26 14:57:54 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17680
+2017-04-26 14:57:54 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493189874399 HTTP/1.1" 200 2
+2017-04-26 14:58:04 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 14:58:05 [basehttp INFO] "GET /api/users/v1/users/?_=1493189884512 HTTP/1.1" 200 52388
+2017-04-26 14:58:10 [basehttp INFO] "GET /users/user/4 HTTP/1.1" 200 44778
+2017-04-26 14:58:19 [basehttp INFO] "GET /users/user/4/asset-permission HTTP/1.1" 200 23764
+2017-04-26 14:58:19 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=4&_=1493189899243 HTTP/1.1" 200 2
+2017-04-26 14:58:25 [basehttp INFO] "GET /users/user/4/assets HTTP/1.1" 200 16157
+2017-04-26 14:58:25 [basehttp INFO] "GET /api/perms/v1/user/4/assets/?_=1493189905208 HTTP/1.1" 200 2
+2017-04-26 14:58:25 [basehttp INFO] "GET /api/perms/v1/user/4/asset-groups/?_=1493189905209 HTTP/1.1" 200 2
+2017-04-26 14:58:28 [basehttp INFO] "GET /users/user/4/asset-permission HTTP/1.1" 200 23764
+2017-04-26 14:58:28 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=4&_=1493189908413 HTTP/1.1" 200 2
+2017-04-26 14:58:28 [basehttp INFO] "GET /users/user/4 HTTP/1.1" 200 44778
+2017-04-26 14:58:33 [basehttp INFO] "PATCH /api/users/v1/users/4/groups/ HTTP/1.1" 200 24
+2017-04-26 14:58:39 [basehttp INFO] "PATCH /api/users/v1/users/4/ HTTP/1.1" 200 533
+2017-04-26 14:58:42 [basehttp INFO] "GET /users/user/4/asset-permission HTTP/1.1" 200 23764
+2017-04-26 14:58:42 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=4&_=1493189922498 HTTP/1.1" 200 2
+2017-04-26 14:58:56 [basehttp INFO] "POST /users/user/4/asset-permission/create HTTP/1.1" 302 0
+2017-04-26 14:58:56 [basehttp INFO] "GET /users/user/4/asset-permission HTTP/1.1" 200 23764
+2017-04-26 14:58:57 [basehttp INFO] "GET /api/perms/v1/asset-permissions/?user=4&_=1493189937016 HTTP/1.1" 200 247
+2017-04-26 14:59:01 [basehttp INFO] "GET /users/user/4/assets HTTP/1.1" 200 16157
+2017-04-26 14:59:01 [basehttp INFO] "GET /api/perms/v1/user/4/assets/?_=1493189941160 HTTP/1.1" 200 268
+2017-04-26 14:59:01 [basehttp INFO] "GET /api/perms/v1/user/4/asset-groups/?_=1493189941161 HTTP/1.1" 200 128
+2017-04-26 14:59:08 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17680
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/plugins/select2/select2.min.css HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/inspinia.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/plugins/metisMenu/jquery.metisMenu.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/plugins/select2/select2.full.min.js HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/css/patterns/header-profile.png HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/js/plugins/dataTables/i18n/zh-hans.json HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 304 0
+2017-04-26 14:59:08 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493189948487 HTTP/1.1" 200 670
+2017-04-26 14:59:10 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 16247
+2017-04-26 14:59:13 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 16247
+2017-04-26 14:59:14 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 16247
+2017-04-26 14:59:16 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16412
+2017-04-26 14:59:17 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493189956991 HTTP/1.1" 200 2
+2017-04-26 14:59:18 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 16247
+2017-04-26 14:59:23 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17680
+2017-04-26 14:59:23 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493189963076 HTTP/1.1" 200 670
+2017-04-26 14:59:27 [basehttp INFO] "GET /assets/asset/2/ HTTP/1.1" 200 20192
+2017-04-26 14:59:35 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 16247
+2017-04-26 14:59:47 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 10566
+2017-04-26 14:59:47 [basehttp INFO] "GET /static/css/plugins/cropper/cropper.min.css HTTP/1.1" 200 3329
+2017-04-26 14:59:47 [basehttp INFO] "GET /static/js/plugins/cropper/cropper.min.js HTTP/1.1" 200 17154
+2017-04-26 14:59:50 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 9739
+2017-04-26 14:59:51 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 10147
+2017-04-26 15:00:02 [basehttp INFO] "POST /users/profile/pubkey/update/ HTTP/1.1" 200 10222
+2017-04-26 15:00:28 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 9739
+2017-04-26 15:00:30 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 10566
+2017-04-26 15:00:39 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17680
+2017-04-26 15:00:39 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493190039406 HTTP/1.1" 200 670
+2017-04-26 15:00:41 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16412
+2017-04-26 15:00:41 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493190041698 HTTP/1.1" 200 2
+2017-04-26 15:03:10 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 10147
+2017-04-26 15:04:02 [basehttp INFO] "POST /users/profile/pubkey/update/ HTTP/1.1" 302 0
+2017-04-26 15:04:02 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:04:08 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17373
+2017-04-26 15:04:08 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493190248685 HTTP/1.1" 200 670
+2017-04-26 15:04:13 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:04:16 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 10259
+2017-04-26 15:04:20 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 9432
+2017-04-26 15:04:36 [basehttp INFO] "POST /users/profile/password/update/ HTTP/1.1" 200 9656
+2017-04-26 15:05:25 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 10259
+2017-04-26 15:05:29 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 9432
+2017-04-26 15:05:31 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 9895
+2017-04-26 15:05:40 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16105
+2017-04-26 15:05:40 [basehttp INFO] - Broken pipe from ('127.0.0.1', 53211)
+
+2017-04-26 15:05:40 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16105
+2017-04-26 15:05:40 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493190340724 HTTP/1.1" 200 2
+2017-04-26 15:14:29 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16105
+2017-04-26 15:14:30 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493190869961 HTTP/1.1" 200 2
+2017-04-26 15:14:47 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:15:06 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17373
+2017-04-26 15:15:06 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493190906694 HTTP/1.1" 200 670
+2017-04-26 15:15:08 [basehttp INFO] "GET /assets/asset/2/ HTTP/1.1" 200 19885
+2017-04-26 15:15:27 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:15:31 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:15:34 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:15:37 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 10259
+2017-04-26 15:15:40 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 9432
+2017-04-26 15:15:42 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 9895
+2017-04-26 15:15:44 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 9432
+2017-04-26 15:16:10 [basehttp INFO] "POST /users/profile/password/update/ HTTP/1.1" 200 9519
+2017-04-26 15:16:29 [basehttp INFO] "POST /users/profile/password/update/ HTTP/1.1" 302 0
+2017-04-26 15:16:29 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 302 0
+2017-04-26 15:16:29 [basehttp INFO] "GET /users/login?next=/users/profile/ HTTP/1.1" 200 4425
+2017-04-26 15:16:29 [basehttp INFO] "GET /captcha/image/e66b5dc10330a265848d4c42b707b14aeb13e8e4/ HTTP/1.1" 200 4156
+2017-04-26 15:16:40 [basehttp INFO] "POST /users/login?next=/users/profile/ HTTP/1.1" 200 4654
+2017-04-26 15:16:40 [basehttp INFO] "GET /captcha/image/d9b36d9715108bc4d7abe17d7b297e01a5ddfc05/ HTTP/1.1" 200 4269
+2017-04-26 15:17:06 [basehttp INFO] "POST /users/login?next=/users/profile/ HTTP/1.1" 302 0
+2017-04-26 15:17:06 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:46:22 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:46:25 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 15:46:26 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17373
+2017-04-26 15:46:27 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493192786982 HTTP/1.1" 200 670
+2017-04-26 15:46:51 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16105
+2017-04-26 15:46:51 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493192811509 HTTP/1.1" 200 2
+2017-04-26 16:01:32 [basehttp INFO] "GET /assets/user-asset/ HTTP/1.1" 200 17373
+2017-04-26 16:01:32 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493193692225 HTTP/1.1" 200 670
+2017-04-26 16:01:33 [basehttp INFO] "GET /users/profile/ HTTP/1.1" 200 15995
+2017-04-26 16:01:37 [basehttp INFO] "GET /applications/terminal/ HTTP/1.1" 200 16105
+2017-04-26 16:01:37 [basehttp INFO] "GET /api/applications/v1/terminal/?_=1493193697091 HTTP/1.1" 200 2
+2017-04-26 16:55:41 [basehttp INFO] "GET /users/user/4/assets HTTP/1.1" 200 15850
+2017-04-26 16:55:42 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-26 16:55:42 [basehttp INFO] "GET /api/perms/v1/user/4/assets/?_=1493196942076 HTTP/1.1" 200 268
+2017-04-26 16:55:42 [basehttp INFO] "GET /api/perms/v1/user/4/asset-groups/?_=1493196942077 HTTP/1.1" 200 128
+2017-04-26 16:55:44 [basehttp INFO] "GET /users/user/4/assets HTTP/1.1" 200 15850
+2017-04-26 16:55:45 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-26 16:55:45 [basehttp INFO] "GET /api/perms/v1/user/4/assets/?_=1493196944981 HTTP/1.1" 200 268
+2017-04-26 16:55:45 [basehttp INFO] "GET /api/perms/v1/user/4/asset-groups/?_=1493196944982 HTTP/1.1" 200 128
+2017-04-26 16:55:47 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 16:57:38 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 16:57:40 [basehttp INFO] "GET /api/users/v1/users/?_=1493197058944 HTTP/1.1" 200 52401
+2017-04-26 16:57:41 [basehttp INFO] "GET /users/user/create HTTP/1.1" 200 18595
+2017-04-26 16:58:25 [basehttp INFO] "POST /users/user/create HTTP/1.1" 200 18856
+2017-04-26 16:58:36 [basehttp INFO] "POST /users/user/create HTTP/1.1" 302 0
+2017-04-26 16:58:36 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21740
+2017-04-26 16:58:37 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 16:58:37 [basehttp ERROR] "GET /api/users/v1/users/?_=1493197117022 HTTP/1.1" 500 20069
+2017-04-26 16:58:50 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 16:58:50 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-26 16:58:50 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 16:58:51 [basehttp ERROR] "GET /api/users/v1/users/?_=1493197130551 HTTP/1.1" 500 20069
+2017-04-26 16:59:54 [basehttp INFO] "GET /users/logout HTTP/1.1" 200 2859
+2017-04-26 16:59:54 [base WARNING] Not Found: /favicon.ico
+2017-04-26 16:59:54 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-26 16:59:55 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4425
+2017-04-26 16:59:55 [basehttp INFO] "GET /captcha/image/d30daf9c6462c9f32b5ddbb952085567fcc2e032/ HTTP/1.1" 200 4302
+2017-04-26 17:00:00 [basehttp INFO] "POST /users/login HTTP/1.1" 302 0
+2017-04-26 17:00:00 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 17:00:03 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 17:00:04 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-26 17:00:06 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12661
+2017-04-26 17:00:08 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 12241
+2017-04-26 17:00:09 [basehttp INFO] "GET /users/profile/update/ HTTP/1.1" 200 13038
+2017-04-26 17:00:09 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12661
+2017-04-26 17:00:37 [basehttp INFO] "POST /users/profile/pubkey/update/ HTTP/1.1" 200 14437
+2017-04-26 17:00:53 [basehttp INFO] "GET /users/profile/password/update/ HTTP/1.1" 200 12241
+2017-04-26 17:00:56 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 17:00:57 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:00:57 [basehttp ERROR] "GET /api/users/v1/users/?_=1493197257059 HTTP/1.1" 500 20069
+2017-04-26 17:02:23 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 17:02:23 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-26 17:02:23 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:02:23 [basehttp ERROR] "GET /api/users/v1/users/?_=1493197343204 HTTP/1.1" 500 20057
+2017-04-26 17:02:27 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/css/plugins/select2/select2.min.css HTTP/1.1" 200 15196
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-26 17:02:27 [basehttp INFO] "GET /static/js/plugins/select2/select2.full.min.js HTTP/1.1" 200 75005
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/plugins/dataTables/dataTables.min.js HTTP/1.1" 200 1287120
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/plugins/metisMenu/jquery.metisMenu.js HTTP/1.1" 200 3984
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/plugins/toastr/toastr.min.js HTTP/1.1" 200 5216
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/inspinia.js HTTP/1.1" 200 4636
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 15248
+2017-04-26 17:02:28 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/css/patterns/header-profile.png HTTP/1.1" 200 5877
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 71508
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/js/plugins/dataTables/i18n/zh-hans.json HTTP/1.1" 200 715
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23424
+2017-04-26 17:02:28 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-26 17:02:28 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:02:28 [basehttp ERROR] "GET /api/users/v1/users/?_=1493197348254 HTTP/1.1" 500 20114
+2017-04-26 17:22:28 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 17:22:32 [basehttp INFO] "GET /users/profile/pubkey/update/ HTTP/1.1" 200 12661
+2017-04-26 17:22:40 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 17:22:41 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:22:41 [basehttp ERROR] "GET /api/users/v1/users/?_=1493198561027 HTTP/1.1" 500 20020
+2017-04-26 17:23:08 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:23:16 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:23:16 [basehttp ERROR] "GET /api/users/v1/users/?_=1493198561027 HTTP/1.1" 500 145434
+2017-04-26 17:23:17 [base WARNING] Not Found: /favicon.ico
+2017-04-26 17:23:17 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 3507
+2017-04-26 17:24:21 [basehttp INFO] "GET /users/logout HTTP/1.1" 200 2859
+2017-04-26 17:24:22 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:23 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4425
+2017-04-26 17:24:23 [basehttp INFO] "GET /captcha/image/b1b1ac5e5aae306d2cd9ce684a2a769d27d40bdb/ HTTP/1.1" 200 3772
+2017-04-26 17:24:23 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:25 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4425
+2017-04-26 17:24:25 [basehttp INFO] "GET /captcha/image/70e4b74eccf4e756866e69b9e33e0b766f7108b2/ HTTP/1.1" 200 4353
+2017-04-26 17:24:25 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:27 [basehttp INFO] "GET /users/login HTTP/1.1" 200 4425
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 114011
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/font-awesome.css HTTP/1.1" 200 26651
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/plugins/dataTables/datatables.min.css HTTP/1.1" 200 16774
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/jumpserver.css HTTP/1.1" 200 4741
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/js/jquery-2.1.1.js HTTP/1.1" 200 84251
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1" 200 16141
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/js/jumpserver.js HTTP/1.1" 200 11159
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/plugins/vaildator/jquery.validator.css HTTP/1.1" 200 3526
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 34653
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/plugins/sweetalert/sweetalert.css HTTP/1.1" 200 18130
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/css/style.css HTTP/1.1" 200 173119
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/js/plugins/dataTables/datatables.min.js HTTP/1.1" 200 1287120
+2017-04-26 17:24:27 [basehttp INFO] "GET /static/img/logo.png HTTP/1.1" 200 16275
+2017-04-26 17:24:27 [basehttp INFO] "GET /captcha/image/66c25761301d9e2488cbc24534c37c892b4c8b7e/ HTTP/1.1" 200 3918
+2017-04-26 17:24:27 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:44 [basehttp INFO] "POST /users/login HTTP/1.1" 302 0
+2017-04-26 17:24:44 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-26 17:24:44 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:48 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 17:24:48 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:48 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:24:49 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:24:49 [basehttp ERROR] "GET /api/users/v1/users/?_=1493198688401 HTTP/1.1" 500 20020
+2017-04-26 17:25:27 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-26 17:25:28 [basehttp WARNING] "GET /static/js/plugins/dataTables/pdfmake.min.js.map HTTP/1.1" 404 1733
+2017-04-26 17:25:28 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-26 17:25:28 [basehttp ERROR] "GET /api/users/v1/users/?_=1493198728026 HTTP/1.1" 500 20020
+2017-04-27 10:17:10 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-27 10:17:10 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-27 10:17:14 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-27 10:17:14 [basehttp INFO] - Broken pipe from ('127.0.0.1', 50294)
+
+2017-04-27 10:17:14 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-27 10:17:15 [exception ERROR] Internal Server Error: /api/users/v1/users/
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/viewsets.py", line 83, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 725, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 643, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 83, in is_valid
+    if self.is_active and not self.is_expired:
+  File "/Users/siffre/EaaS/apps/users/models/user.py", line 76, in is_expired
+    if self.date_expired < timezone.now():
+TypeError: can't compare datetime.datetime to NoneType
+2017-04-27 10:17:15 [basehttp ERROR] "GET /api/users/v1/users/?_=1493259434456 HTTP/1.1" 500 20060
+2017-04-27 10:18:08 [exception ERROR] Internal Server Error: /users/user
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/middleware/locale.py", line 25, in process_request
+    language = translation.get_language_from_request(request, check_path=i18n_patterns_used)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 206, in get_language_from_request
+    return _trans.get_language_from_request(request, check_path)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/trans_real.py", line 516, in get_language_from_request
+    lang_code = request.session.get(LANGUAGE_SESSION_KEY)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 68, in get
+    return self._session.get(key, default)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jumpserver.django_session' doesn't exist")
+2017-04-27 10:18:08 [basehttp ERROR] "GET /users/user HTTP/1.1" 500 142083
+2017-04-27 10:18:09 [exception ERROR] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/middleware/locale.py", line 25, in process_request
+    language = translation.get_language_from_request(request, check_path=i18n_patterns_used)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 206, in get_language_from_request
+    return _trans.get_language_from_request(request, check_path)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/trans_real.py", line 516, in get_language_from_request
+    lang_code = request.session.get(LANGUAGE_SESSION_KEY)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 68, in get
+    return self._session.get(key, default)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jumpserver.django_session' doesn't exist")
+2017-04-27 10:18:09 [basehttp ERROR] "GET /favicon.ico HTTP/1.1" 500 142045
+2017-04-27 10:18:11 [exception ERROR] Internal Server Error: /users/user
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/middleware/locale.py", line 25, in process_request
+    language = translation.get_language_from_request(request, check_path=i18n_patterns_used)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 206, in get_language_from_request
+    return _trans.get_language_from_request(request, check_path)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/trans_real.py", line 516, in get_language_from_request
+    lang_code = request.session.get(LANGUAGE_SESSION_KEY)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 68, in get
+    return self._session.get(key, default)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jumpserver.django_session' doesn't exist")
+2017-04-27 10:18:11 [basehttp ERROR] "GET /users/user HTTP/1.1" 500 142086
+2017-04-27 10:18:12 [exception ERROR] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/middleware/locale.py", line 25, in process_request
+    language = translation.get_language_from_request(request, check_path=i18n_patterns_used)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 206, in get_language_from_request
+    return _trans.get_language_from_request(request, check_path)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/utils/translation/trans_real.py", line 516, in get_language_from_request
+    lang_code = request.session.get(LANGUAGE_SESSION_KEY)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 68, in get
+    return self._session.get(key, default)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/siffre/JumpServer/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jumpserver.django_session' doesn't exist")
+2017-04-27 10:18:12 [basehttp ERROR] "GET /favicon.ico HTTP/1.1" 500 142048
+2017-04-27 10:19:07 [basehttp INFO] "GET / HTTP/1.1" 302 0
+2017-04-27 10:19:07 [basehttp INFO] "GET /users/login?next=/ HTTP/1.1" 200 4425
+2017-04-27 10:19:07 [basehttp INFO] "GET /captcha/image/93540afb9adb0075376976f895fc6dd05b798353/ HTTP/1.1" 200 3784
+2017-04-27 10:19:14 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 200 4658
+2017-04-27 10:19:14 [basehttp INFO] "GET /captcha/image/39a0553842130a815cf93becd886b26f104e3f74/ HTTP/1.1" 200 4120
+2017-04-27 10:19:19 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 200 4581
+2017-04-27 10:19:19 [basehttp INFO] "GET /captcha/image/5bc330af613e0cbfadb6fd2d39fa41d5904ecab2/ HTTP/1.1" 200 4480
+2017-04-27 10:19:19 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-27 10:19:42 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 200 4581
+2017-04-27 10:19:42 [basehttp INFO] "GET /captcha/image/159468edc7ad01b10777c62b57f059cf22a930d7/ HTTP/1.1" 200 4430
+2017-04-27 10:19:42 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-27 10:19:47 [basehttp INFO] "POST /users/login?next=/ HTTP/1.1" 302 0
+2017-04-27 10:19:47 [basehttp INFO] "GET / HTTP/1.1" 200 23847
+2017-04-27 10:19:48 [basehttp INFO] "GET /media/avatar/default.png HTTP/1.1" 200 108909
+2017-04-27 10:19:51 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-27 10:19:51 [basehttp INFO] "GET /api/users/v1/users/?_=1493259591177 HTTP/1.1" 200 537
+2017-04-27 10:20:27 [basehttp INFO] "GET / HTTP/1.1" 200 23847
+2017-04-27 10:40:05 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-27 10:40:05 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-27 10:40:37 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21327
+2017-04-27 10:40:37 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493260837112 HTTP/1.1" 200 2643
+2017-04-27 10:40:42 [basehttp INFO] "GET /assets/asset/3/ HTTP/1.1" 200 49919
+2017-04-27 10:41:00 [utils DEBUG] Start runner Ansible AdHoc runner
+2017-04-27 10:41:15 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21327
+2017-04-27 10:41:15 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493260875244 HTTP/1.1" 200 2643
+2017-04-27 10:41:27 [basehttp INFO] "GET /assets/asset/3/update/ HTTP/1.1" 200 20876
+2017-04-27 10:41:27 [basehttp INFO] "GET /static/css/plugins/inputTags.css HTTP/1.1" 200 5621
+2017-04-27 10:41:27 [basehttp INFO] "GET /static/js/plugins/inputTags.jquery.min.js HTTP/1.1" 200 10472
+2017-04-27 10:41:48 [basehttp INFO] "POST /assets/asset/3/update/ HTTP/1.1" 302 0
+2017-04-27 10:41:48 [basehttp INFO] "GET /assets/asset/ HTTP/1.1" 200 21327
+2017-04-27 10:41:48 [basehttp INFO] "GET /api/assets/v1/assets/?_=1493260908188 HTTP/1.1" 200 2637
+2017-04-27 10:41:59 [basehttp INFO] "GET /assets/system-user/ HTTP/1.1" 200 15712
+2017-04-27 10:41:59 [basehttp INFO] "GET /api/assets/v1/system-user/?_=1493260919208 HTTP/1.1" 200 2720
+2017-04-27 10:42:04 [basehttp INFO] "GET /assets/system-user/4/ HTTP/1.1" 200 16064
+2017-04-27 10:42:24 [basehttp INFO] "GET /assets/system-user/4/asset/ HTTP/1.1" 200 37835
+2017-04-27 10:42:24 [basehttp INFO] "GET /api/assets/v1/assets/?system_user_id=4&_=1493260944328 HTTP/1.1" 200 2
+2017-04-27 10:42:31 [basehttp INFO] "GET /api/assets/v1/assets/?system_user_id=4 HTTP/1.1" 200 2
+2017-04-27 10:42:31 [basehttp INFO] "GET /api/assets/v1/assets/?system_user_id=4&_=1493260944329 HTTP/1.1" 200 2
+2017-04-27 10:42:32 [basehttp INFO] "PATCH /api/assets/v1/system_user/4/assets/ HTTP/1.1" 200 21
+2017-04-27 10:42:36 [basehttp INFO] "GET /api/assets/v1/system_user/4/groups/ HTTP/1.1" 200 26
+2017-04-27 10:42:36 [basehttp INFO] "PATCH /api/assets/v1/system_user/4/groups/ HTTP/1.1" 200 30
+2017-04-27 10:42:38 [basehttp INFO] "GET /assets/system-user/4/asset/ HTTP/1.1" 200 39171
+2017-04-27 10:42:39 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-27 10:42:39 [basehttp INFO] "GET /api/assets/v1/assets/?system_user_id=4&_=1493260958842 HTTP/1.1" 200 667
+2017-04-27 10:42:47 [basehttp INFO] "GET /assets/system-user/4/ HTTP/1.1" 200 16064
+2017-04-27 10:42:56 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-27 10:42:56 [basehttp INFO] - Broken pipe from ('127.0.0.1', 50726)
+
+2017-04-27 10:42:56 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-27 10:43:02 [basehttp INFO] "GET /perms/asset-permission HTTP/1.1" 200 13090
+2017-04-27 10:43:02 [basehttp INFO] "GET /static/img/facio.ico HTTP/1.1" 200 1744
+2017-04-27 10:43:03 [basehttp INFO] "GET / HTTP/1.1" 200 23848
+2017-04-27 11:29:24 [basehttp INFO] "GET /users/user HTTP/1.1" 200 21570
+2017-04-27 11:29:25 [basehttp INFO] "GET /api/users/v1/users/?_=1493263764719 HTTP/1.1" 200 52308
+2017-04-27 11:29:25 [basehttp INFO] "GET /users/user/create HTTP/1.1" 200 18595
+2017-04-27 11:30:04 [basehttp INFO] "GET / HTTP/1.1" 200 23848
