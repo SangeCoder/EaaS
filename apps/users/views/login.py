@@ -1,11 +1,13 @@
 # ~*~ coding: utf-8 ~*~
 
 from __future__ import unicode_literals
-from django.shortcuts import render, reverse, redirect
+from django import forms
+from django.shortcuts import render
 from django.contrib.auth import login as auth_login, logout as auth_logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
+from django.shortcuts import reverse, redirect
 from django.utils.decorators import method_decorator
 from django.utils.translation import ugettext as _
 from django.views.decorators.cache import never_cache
@@ -46,8 +48,10 @@ class UserLoginView(FormView):
         auth_login(self.request, form.get_user())
         login_ip = self.request.META.get('REMOTE_ADDR', '')
         user_agent = self.request.META.get('HTTP_USER_AGENT', '')
-        self.delay = write_login_log_async.delay(self.request.user.username, self.request.user.name, login_type='W',
-                                                 login_ip=login_ip, user_agent=user_agent)
+        write_login_log_async.delay(self.request.user.username,
+                                    self.request.user.name,
+                                    login_type='W', login_ip=login_ip,
+                                    user_agent=user_agent)
         return redirect(self.get_success_url())
 
     def get_success_url(self):

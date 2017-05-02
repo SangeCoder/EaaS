@@ -11,13 +11,13 @@
         </div>
         <ul class="nav navbar-top-links navbar-right">
             <li>
-                <span class="m-r-sm text-muted welcome-message">{% trans '欢迎使用会分期EaaS平台' %}</span>
+                <span class="m-r-sm text-muted welcome-message">{% trans 'Welcome to use Jumpserver system' %}</span>
             </li>
-{#            <li class="dropdown">#}
-{#                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">#}
-{#                     <span class="m-r-sm text-muted welcome-message">{% trans 'Help' %}</span>#}
-{#                </a>#}
-{#            </li>#}
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                     <span class="m-r-sm text-muted welcome-message">{% trans 'Help' %}</span>
+                </a>
+            </li>
             <li>
                 {% if user.is_authenticated %}
                 <a href="{% url 'users:logout' %}">

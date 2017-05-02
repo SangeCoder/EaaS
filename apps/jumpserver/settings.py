@@ -18,6 +18,7 @@ from django.urls import reverse_lazy
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_DIR = os.path.dirname(BASE_DIR)
+
 sys.path.append(PROJECT_DIR)
 
 # Import project config setting
@@ -65,6 +66,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -131,6 +133,7 @@ else:
             'PORT': CONFIG.DB_PORT,
             'USER': CONFIG.DB_USER,
             'PASSWORD': CONFIG.DB_PASSWORD,
+            'init_command': "SET sql_mode='STRICT_ALL_TABLES'",
         }
     }
 
@@ -229,7 +232,7 @@ LOGGING = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'zh_CN'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Shanghai'
 
@@ -292,7 +295,7 @@ AUTH_USER_MODEL = 'users.User'
 
 # Celery using redis as broker
 BROKER_URL = 'redis://%(password)s%(host)s:%(port)s/3' % {
-    'password': ':' + CONFIG.REDIS_PASSWORD + '@' if CONFIG.REDIS_PASSWORD else '',
+    'password': CONFIG.REDIS_PASSWORD + ':' if CONFIG.REDIS_PASSWORD else '',
     'host': CONFIG.REDIS_HOST or '127.0.0.1',
     'port': CONFIG.REDIS_PORT or 6379,
 }
@@ -341,5 +344,3 @@ BOOTSTRAP3 = {
     # Set placeholder attributes to label if no placeholder is provided
     'set_placeholder': True,
 }
-
-CSRF_COOKIE_SECURE = False
